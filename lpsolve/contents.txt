@@ -1,0 +1,17 @@
+This archive contains the lp_solve stand-alone program
+and bfp and xli libraries.
+
+lp_solve.exe: The stand-alone lp_solve program
+bfp_etaPFI: etaPFI bfp library
+bfp_LUSOL: LUSOL bfp library
+bfp_GLPK:  GLPK bfp library
+xli_MathProg: MathProg library to read MathProg models. Writing is not supported at this time.
+xli_ZIMPL:    ZIMPL library to read ZIMPL models.
+xli_CPLEX:  CPLEX library to read/write CPLEX lp model files.
+xli_LINDO:  LINDO library to read/write LINDO lp model files.
+xli_XPRESS: Xpress library to read/write Xpress lp model files.
+xli_LPFML:  LPFML library to read/write XML model files.
+            Note that two extra libraries are needed for this:
+            See the lp_solve yahoo site under Files/utils/Xalan_Xerces.zip
+            Put these in the Windows directory.
+xli_DIMACS: DIMACS library to read/write DIMACS minimum cost flow problems.

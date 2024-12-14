@@ -1,0 +1,3 @@
+include clara/*.py
+include clara/*.pyx
+include clara/*.pxd
