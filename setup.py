@@ -13,8 +13,8 @@ extensions = Extension(
       'clara.pylpsolve',
       ['clara/pylpsolve.pyx'],
       libraries=['lpsolve55'],
-      library_dirs=[r'D:\TA\Test Terakhir\clara-master\lpsolve'],
-      include_dirs=[r'D:\TA\Test Terakhir\clara-master\lpsolve'],
+      library_dirs=[r'/workspaces/deploy-streamlit/lpsolve'],
+      include_dirs=[r'/workspaces/deploy-streamlit/lpsolve'],
       define_macros=[
             ('WIN32', None),
             ('NOMINMAX', None),
