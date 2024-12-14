@@ -6,16 +6,16 @@ from setuptools.extension import Extension
 
 import os
 
-project_root = os.path.dirname(__file__)
-project_dir = os.path.abspath(os.path.join(project_root, "lpsolve"))
+project_root = os.path.abspath(os.path.dirname(__file__))
+lpsolve_dir = os.path.join(project_root, "lpsolve")
 
 extensions = Extension(
       'clara.pylpsolve',
       ['clara/pylpsolve.pyx'],
       libraries=['lpsolve55'],
       
-      library_dirs=[r'https://github.com/fadhlyal/deploy-streamlit/tree/7d9adfcab08ce044922a02e6bb8c9017d2f4c751/lpsolve'],
-      include_dirs=[r'https://github.com/fadhlyal/deploy-streamlit/tree/7d9adfcab08ce044922a02e6bb8c9017d2f4c751/lpsolve'],
+      library_dirs=[lpsolve_dir],
+      include_dirs=[lpsolve_dir],
       define_macros=[
             ('WIN32', None),
             ('NOMINMAX', None),

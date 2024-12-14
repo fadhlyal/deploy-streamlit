@@ -21,3 +21,17 @@ print([test5])
 print([test6])
 print( test3 == test )
 print(testEnv)
+
+project_root = os.path.abspath(os.path.dirname(__file__))
+lpsolve_dir = os.path.join(project_root, "lpsolve")
+
+# Check if the required files exist
+if not os.path.exists(os.path.join(lpsolve_dir, "lp_lib.h")):
+    print("Error: lp_lib.h not found in lpsolve directory.")
+    sys.exit(1)
+
+if not any(fname.startswith("lpsolve55") for fname in os.listdir(lpsolve_dir)):
+    print("Error: lpsolve55 library not found in lpsolve directory.")
+    sys.exit(1)
+
+print(lpsolve_dir)
