@@ -14,8 +14,8 @@ extensions = Extension(
       ['clara/pylpsolve.pyx'],
       libraries=['lpsolve55'],
       
-      library_dirs=[r'https://github.com/fadhlyal/deploy-streamlit/tree/main/lpsolve'],
-      include_dirs=[r'https://github.com/fadhlyal/deploy-streamlit/tree/main/lpsolve'],
+      library_dirs=[r'/workspaces/deploy-streamlit/lpsolve'],
+      include_dirs=[r'/workspaces/deploy-streamlit/lpsolve'],
       define_macros=[
             ('WIN32', None),
             ('NOMINMAX', None),
