@@ -192,7 +192,7 @@
 #define MAJORVERSION             5
 #define MINORVERSION             5
 #define RELEASE                  2
-#define BUILD                    5
+#define BUILD                   11
 #define BFPVERSION              12       /* Checked against bfp_compatible() */
 #define XLIVERSION              12       /* Checked against xli_compatible() */
 /* Note that both BFPVERSION and XLIVERSION typically have to be incremented
@@ -338,6 +338,8 @@
 #define MPSFREE                  2
 #define MPSIBM                   4
 #define MPSNEGOBJCONST           8
+#define MPSFREEFULLPRECISION    16
+#define MPSLINDO                32
 
 #define MPS_FREE                 (MPSFREE<<2)
 #define MPS_IBM                  (MPSIBM<<2)
