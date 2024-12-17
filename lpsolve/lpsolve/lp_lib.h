@@ -211,7 +211,11 @@
 #include "lp_utils.h"
 
 #if (LoadInverseLib == TRUE) || (LoadLanguageLib == TRUE)
-  #include <dlfcn.h>
+  #ifdef WIN32
+    #include <windows.h>
+  #else
+    #include <dlfcn.h>
+  #endif
 #endif
 
 #ifndef BFP_CALLMODEL

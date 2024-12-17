@@ -1,9 +1,9 @@
 #ifndef HEADER_lp_types
 #define HEADER_lp_types
 
-// #ifdef WIN32
-//   #include <windows.h>
-// #endif
+#ifdef WIN32
+  #include <windows.h>
+#endif
 
 /* Define data types                                                         */
 /* ------------------------------------------------------------------------- */
